@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "poppinsbold";
+  src: url("../fonts/poppins/poppins-bold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/poppins/poppins-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "notoserif-bold";
+  src: url("../fonts/notoserif-bold-webfront.woff2")
+      format("woff2"),
+    url("../fonts/notoserif-bold-webfront.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "notoserif-regular";
+  src: url("../fonts/notoserif-regular-webfront.woff2")
+      format("woff2"),
+    url("../fonts/notoserif-regular-webfront.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
