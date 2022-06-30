@@ -204,6 +204,7 @@ a{
   text-align: center;
   justify-content: center;
   animation: change 6s infinite ease-in-out;
+  margin-top: 10rem;
 }
 @keyframes change{
   0%
