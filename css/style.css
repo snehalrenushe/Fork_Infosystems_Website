@@ -38,10 +38,13 @@
 .container
 {
   height: 100vh;
+  width: 100vw;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   font-family: notoserif-regular;
 }
+
+/* BANNER SECTION */
 
 section
 {
@@ -57,16 +60,19 @@ section
   padding: 0;
 }
 
+/* Header */
+
 .header
 {
-  min-height: 6vh;
+  min-height: 4.4vh;
   background-image: linear-gradient(45deg, #52c4ff, #004aae);
   color: white;
   align-items: center;
+  width: 100%;
 }
 
 .header-content{
-  width: 35%;
+  width: 32%;
   float: right;
   display: flex;
   justify-content: space-between;
@@ -83,7 +89,7 @@ section
 .header-mobile
 {
   display: flex;
-  width: 33%;
+  width: 35%;
   justify-content: space-between;
 }
 
@@ -126,4 +132,145 @@ section
   letter-spacing: 0.8px;
   text-decoration: none;
   color: white;
+}
+
+/* Navbar */
+
+a{
+  cursor: pointer;
+}
+
+.navbar{
+  background-color: #004AAE; 
+  width: 100%;
+  height: 12%;  
+}
+
+.navbar-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-height: 100%;
+}
+
+.logo{
+  width: 5%;
+}
+
+.logo img{
+  width: 100%;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-evenly;
+  width: 140%;
+  margin-left: 15%;
+}
+
+.nav-links li{
+  list-style: none;
+  cursor: pointer;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.list-item
+{
+  padding: 0.4rem 0.6rem;
+}
+
+.list-item:hover
+{
+  background-color: #0c2e5c; 
+}
+
+/* Image Slider */
+
+.Section_top{
+  width: 100%;
+  height: 80%;
+  background-image: url(../img/Header_Slider/Desktop_Large1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 6s infinite ease-in-out;
+}
+@keyframes change{
+  0%
+  {
+      background-image: url(../img/Header_Slider/Desktop_Large2.png);
+  }
+  40%
+  {
+      background-image: url(../img/Header_Slider/Desktop_Large3.png);
+  }
+  80%
+  {
+      background-image: url(../img/Header_Slider/Desktop_Large1.png);
+  }
+}
+
+/* Banner Marque */
+
+.cont{
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.marquee{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee-content{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling 1s linear infinite;
+    align-items: center;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(90vw);
+      
+    }
+
+    100%{transform: translateX(-10vw);}
+}
+
+
+.marquee-content a{
+    color: white;
+    text-decoration: none;
+    text-decoration: inherit;
+}
+
+.marquee-content a:hover {
+    color: orange;
+    animation-play-state: paused;
+    text-decoration: inherit;
+    outline: 5px solid #2e7ad1;
+    cursor: pointer;
+}
+
+.marquee-content li{
+    display: flex;
+    font-size: 1.5rem;
+    margin-left: 2rem;
 }
