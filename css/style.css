@@ -1,4 +1,5 @@
-@font-face {
+@font-face 
+{
   font-family: "poppinsbold";
   src: url("../fonts/poppins/poppins-bold-webfont.woff2")
       format("woff2"),
@@ -7,7 +8,8 @@
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "notoserif-bold";
   src: url("../fonts/notoserif-bold-webfront.woff2")
       format("woff2"),
@@ -16,11 +18,119 @@
   font-style: normal;
 }
 
-@font-face {
+@font-face 
+{
   font-family: "notoserif-regular";
   src: url("../fonts/notoserif-regular-webfront.woff2")
       format("woff2"),
     url("../fonts/notoserif-regular-webfront.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  font-family: notoserif-regular;
+}
+
+section
+{
+  height: 100vh;
+  scroll-snap-align: start;
+  padding: 0 5vw;
+  background-color: aqua;
+}
+
+.banner {
+  background-color: rgb(184, 223, 145);
+  position: relative;
+  padding: 0;
+}
+
+.header
+{
+  min-height: 4.3vh;
+  background-image: linear-gradient(45deg, #52c4ff, #004aae);
+  color: white;
+  align-items: center;
+}
+
+.header-content{
+  width: 32%;
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.46rem 2rem;  
+  background-color: #004aae;
+}
+
+.header-email
+{
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+}
+
+.header-mobile
+{
+  display: flex;
+  width: 32%;
+  justify-content: space-between;
+}
+
+.header-logo
+{
+  width: 8%;
+  height: 8%;
+}
+
+.mobile
+{
+  width: 12%;
+}
+
+.header-logo img
+{
+  max-width: 100%;
+  animation: blink-animation 1s steps(5,start) infinite;
+  -webkit-animation: blink-animation 1s steps(5,start) infinite;
+}
+
+@keyframes blink-animation {
+  to{
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation
+{
+  to{
+    visibility: hidden;
+  }
+}
+
+.header-name a
+{
+  font-size: 1.2rem;
+  font-family: notoserif-bold;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar
+{
+  min-height: 6vh;
+  justify-content: space-around;
+  background-color: rgb(213, 118, 118);
 }
