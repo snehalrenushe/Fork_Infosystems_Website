@@ -136,17 +136,20 @@ section
 
 /* Navbar */
 
-a{
+a
+{
   cursor: pointer;
 }
 
-.navbar{
+.navbar
+{
   background-color: #004AAE; 
   width: 100%;
   height: 12%;  
 }
 
-.navbar-content{
+.navbar-content
+{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -154,7 +157,8 @@ a{
   max-height: 100%;
 }
 
-.logo{
+.logo
+{
   width: 5%;
 }
 
