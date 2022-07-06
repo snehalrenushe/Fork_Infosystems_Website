@@ -360,10 +360,42 @@ a
 .card
 {
   min-height: 25vh;
-  margin-top: 3.5vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
   border-radius: 16px;
+}
+
+
+.about-card-content .svg
+{
+  width: 40px;
+  height: 40px;
+}
+
+.about-card-content h5
+{
+  font-size: 18px;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.about-card-content p
+{
+  font-size: 16px;
+  letter-spacing: 0.03vw;
+  margin-top: 1vh;
+}
+
+.about-para{
+  margin-top: 4vh;
+  line-height: 160%;
+  letter-spacing: 0.05em;
+  margin-bottom: 8vh;
+  font-family: 'notoserif-regular';
+}
+
+.bollets{
+  margin-left: 16rem;
 }
