@@ -322,6 +322,7 @@ a
 /* About Us */
 
 .tagline{
+  margin-top: 2rem;
   font-weight: bold;
 }
 .tagline img{
@@ -329,7 +330,7 @@ a
 }
 
 .tagline p{
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   align-items: center;
   text-transform: uppercase;
   font-family: "poppinsbold";
@@ -338,7 +339,7 @@ a
 
 .about-card
 {
-  margin-top: 3vh;
+  margin-top: 5vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -398,4 +399,63 @@ a
 
 .bollets{
   margin-left: 16rem;
+}
+
+/* Gallary Section */
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.carousel {
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__slider {
+  height: 50vh;
+}
+
+.carousel__list {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+.carousel__item {
+  cursor: pointer;
+}
+
+.carousel__item img
+{
+  width: 20vw;
+  height: 40vh;
+  border: 8px solid white;
+}
+.carousel__item:hover {
+  transform: scale(1.1);
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.view-btn button
+{
+  background-color: #004AAE;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.view-btn
+{
+  text-align: center;
+  margin-top: 0.5rem;
 }
