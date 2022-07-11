@@ -459,3 +459,97 @@ ul {
   text-align: center;
   margin-top: 0.5rem;
 }
+
+/* Course Section */
+
+.course-section{
+  height: 62vh;
+  width: 100%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: 'notoserif-regular';
+}
+
+.box-content{
+  width: 23%;
+  height: 28vh;
+  color: black;
+  text-align: center;
+}
+
+.course-box{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.box-content:hover .course-box{
+  transform: rotateY(180deg);
+}
+
+.course-box .course-box-front{
+  border-radius:0 4rem 0 4rem;
+  border: 2px solid #D4D7D8;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+  height: 100%;
+  width: 100%;
+
+}
+
+.course-box-front img
+{
+  width: 100%;
+  height: 100%;
+  border-radius:0 4rem 0 4rem;
+  /* opacity: 0.9; */
+  /* filter: brightness(80%); */ 
+}
+
+.course-box .course-box-back{
+  border-radius:0 4rem 0 4rem;
+  background-color: #004AAE;
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding-top: 1rem;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  padding: 2vw 3vw;
+}
+
+.course-box figure{
+  position: absolute;
+}
+
+.course-box-back img
+{
+  width: 40px;
+  height: 40px;
+}
+
+.course-box-back h5
+{
+  margin-top: 1vh;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.course-box-back p
+{
+  font-size: 16px;
+  letter-spacing: 0.03vw;
+  margin-top: 1vh;
+}
+
+.course-box-back button
+{
+  padding: 0.5vw 1vw;
+  margin-top: 2vh;
+  font-size: 18px;
+  font-weight: bolder;
+  border-radius: 0.5rem;
+  border: none;
+}
