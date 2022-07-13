@@ -85,7 +85,7 @@ section
   width: 32%;
   float: right;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0.46rem 2rem; 
 }
 
@@ -93,14 +93,14 @@ section
 {
   display: flex;
   width: 60%;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .header-mobile
 {
   display: flex;
   width: 35%;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .header-logo
@@ -161,7 +161,7 @@ a
 .navbar-content
 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   max-height: 100%;
@@ -169,7 +169,7 @@ a
 
 .logo
 {
-  width: 5%;
+  width: 8%;
 }
 
 .logo img{
@@ -177,11 +177,16 @@ a
   margin: 1rem 1rem 1rem 2rem;
 }
 
+.navbar-list
+{
+  width: 50%;
+}
+
 .nav-links{
   display: flex;
   justify-content: space-evenly;
-  width: 140%;
-  margin-left: 30%;
+  /* width: 140%; */
+  /* margin-left: 45%; */
 }
 
 .nav-links li{
@@ -235,61 +240,28 @@ a
 }
 
 /* Banner Marque */
-
-.cont{
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: 98.8vw; */
-  width: 98.7vw;
+.marquee {
+  width: 100%;
+  background: rgb(71, 70, 74);
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
   height: 5.6vh;
 }
 
-.marquee{
-    background-color: black;
-    color: white;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+.marquee div {
+  font-size: 2rem;
+  padding-left: 100%;
+  padding-top: 1vh;
+  display: inline-block;
+  animation: animate 10s linear infinite;
+  color: white;
 }
 
-.marquee-content{
-    list-style: none;
-    height: 100%;
-    display: flex;
-    animation: scrolling 5s linear infinite;
-    align-items: center;
-}
-
-@keyframes scrolling {
-    0% {
-        transform: translateX(90vw);
-      
-    }
-
-    100%{transform: translateX(-10vw);}
-}
-
-
-.marquee-content a{
-    color: white;
-    text-decoration: none;
-    text-decoration: inherit;
-}
-
-.marquee-content a:hover {
-    color: orange;
-    animation-play-state: paused;
-    text-decoration: inherit;
-    outline: 5px solid #2e7ad1;
-    cursor: pointer;
-}
-
-.marquee-content li{
-    display: flex;
-    font-size: 1.5rem;
-    margin-left: 2rem;
+@keyframes animate {
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
 
   /* Title Section */
@@ -300,7 +272,7 @@ a
 .headline{
     max-width: 100%;
     background-color: rgba(157, 202, 224, 0.5);
-    height: 5rem;
+    height: 9vh;
 }
 
 .heading{
@@ -661,6 +633,11 @@ ul {
   padding: 0.8rem;
 }
 
+.contact-box img
+{
+  width: 12%;
+}
+
 .contact-box h3
 {
   font-weight: bold;
@@ -716,6 +693,7 @@ textarea
   color: white;
   height: 22vh;
   text-align: center;
+  margin-top: 10vh;
 }
 
 .footer-container
@@ -783,6 +761,8 @@ textarea
   letter-spacing: 0.1rem;
 }
 
+/* Top arrow */
+
 .toparrow
 {
   position: absolute;
@@ -799,4 +779,321 @@ textarea
 #top
 {
   fill: #004AAE;
+}
+
+/* Burger menu */
+
+
+.burger{
+  display: none;
+}
+.burger div{
+  width:25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+  .section-container
+  {
+    padding: 4vh 5vw;
+  }
+
+  /* Up Arrow */
+  .toparrow
+  {
+    left: 85%;
+  }
+
+  /* Heading navbar */
+  .header
+  {
+    min-height: 4.4vh;
+  }
+
+  .header-content
+  {
+    width: 100%;
+    padding: 0.46rem 0.5rem;
+  }
+
+  .header-logo 
+  {
+    width: 6%;
+    height: 6%;
+  }
+
+  .mobile 
+  {
+      width: 10%;
+      height: 10%;
+  }
+
+  .header-name a 
+  {
+    font-size: 0.8rem;
+  }
+
+  /* Navbar */
+
+  .navbar-list
+  {
+    position: absolute;
+    right: 0;
+    top:8vh;
+    margin-top: 8vh;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links
+  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #085ac4; 
+    height: 55vh;
+  }
+
+  .list-item
+  {
+      color: white;
+      letter-spacing: 1px;
+      font-weight: 300;
+      font-size: 18px;
+  }
+
+  .burger
+  {
+      display: block;
+      cursor: pointer;
+      margin-right: 6vw;
+  }
+
+  .nav-active
+  {
+      transform: translateX(0%);
+  }
+
+  .logo 
+  {
+    width: 15%;
+  }
+
+  /* Gallary slider */
+
+  .Section_top
+  {
+    background-image: url(../img/Header_Slider/Android1.png);
+  }
+
+  @keyframes change
+  {
+    0%
+    {
+        background-image: url(../img/Header_Slider/Android2.png);
+    }
+    40%
+    {
+        background-image: url(../img/Header_Slider/Android3.png);
+    }
+    80%
+    {
+        background-image: url(../img/Header_Slider/Android1.png);
+    }
+  }
+
+  /* Marquee */
+
+  .marquee div
+  {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+
+  /* Title */
+
+  .headline
+  {
+    height: 10vh;
+  }
+
+  /* Tagline */
+
+  .tagline img 
+  {
+    width: 3rem;
+  }
+
+  .tagline p 
+  {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .about-quote
+  {
+    margin-top: 2vh;
+  }
+
+  /* About us */
+
+  .about-card 
+  {
+    margin-top: 1vh;
+  }
+
+  .aboutus,.courses,.contact
+  {
+      overflow-y: auto;
+  }
+
+  .about-card .card 
+  {
+    width: 70%;
+    margin: 2vh auto;
+  }
+
+  .about-card-content h5 
+  {
+    font-size: 20px;
+  }
+
+  .about-card-content p 
+  {
+    font-size: 20px;
+    width: 58vw;
+  }
+
+  .bollets 
+  {
+    margin-left: 2rem;
+  }
+
+  /* Gallary */
+
+  .carousel__item img
+  {
+    width: 75vw;
+    height: 50vh;
+  }
+
+  .view-btn
+  {
+    margin-top: 1vh;
+  }
+
+  .view-btn button 
+  {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Courses */
+
+  .courses
+  {
+    margin-bottom: 8vh;
+  }
+
+  .course-section
+  {
+    margin: 0;
+  }
+
+  .box-content
+  {
+    width: 90%;
+    margin: 2vh auto;
+  }
+
+  .course-box-back h5
+  {
+    font-size: 20px;
+  }
+
+  .course-box-back p
+  {
+    font-size: 20px;
+    width: 70vw;
+  }
+
+  .course-box-back button 
+  {
+    padding: 1.5vw 6vw;
+    font-size: 20px;
+  }
+
+  /* Placement Section */
+
+  .placement-quote
+  {
+    margin-top: 5vh;
+  }
+
+  .placement-section-container
+  {
+    padding: 0;
+  }
+
+  .carousel-item-placement
+  {
+    width: 80%;
+    margin-right: 0.3rem;
+    height: 70%;
+  }
+
+  .none
+  {
+    display: none;
+  }
+
+  /* Contact Us */
+
+  .contact-us {
+    flex-direction: column;
+    top: 0;
+    margin: auto;
+    width: 90%;
+  }
+
+  .contact-card-content
+  {
+    flex-direction: column;
+    width: 80%;
+    margin: auto 6vh;
+  }
+
+  .contact-card-content > div
+  {
+    width: 100%;
+  }
+
+  .contact-us-form 
+  {
+    top: 30%;
+  }
+
+  .map-img img 
+  {
+    position: relative;
+    margin-top: 107vh;
+  }
+
+  .contact-us-form 
+  {
+    margin-top: 109vh;
+    width: 100%;
+    margin-left: 2vh;
+  }
+
+  .form 
+  {
+    width: 90%;
+  }
 }

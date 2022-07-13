@@ -45,7 +45,7 @@
                             <li class="list-item"><a href="#Contactus">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="burger">
+                    <div class="burger" onclick="navSlide()">
                         <div class="line1"></div>
                         <div class="line2"></div>
                         <div class="line3"></div>
@@ -56,14 +56,10 @@
                 <div class="content">
                 </div>
             </div> 
-            <div class="cont">
-                <div class="marquee">
-                    <ul class="marquee-content">
-                        <li ><a href="">Home</a></li>
-                        <li ><a href="">About Us</a></li>
-                    </ul>
-                </div>
+            <div class="marquee">
+                <div>Workshop of Web Development by Exec Softwares</div>
             </div>
+              
         </section>
         <section class="aboutus" id="Aboutus">
             <div class="headline">
@@ -221,7 +217,7 @@
                             <figure class="course-box-back">
                                 <img src="./img/Courses/course_Logo/python.png" alt="">
                                 <h5>PYTHON</h5>
-                                <p>Python runs on an interpreter system, meaning that code can be executed as soon as it is written</p>
+                                <p>Python runs on interpreter system,means that code can be executed as soon as it is written</p>
                                 <button>View</button>
                             </figure>
                         </div>
@@ -302,28 +298,28 @@
                     <div class="carousel-slider-placement">
                       <ul class="carousel-list-placement">
                         <li class="carousel-item-placement">
-                            <i><img src="./img/Placements/iauro.png" alt=""></i>
+                            <i><a href="https://www.iauro.com/"><img src="./img/Placements/iauro.png" alt=""></a></i>
                         </li>
                         <li class="carousel-item-placement">
-                            <i><img src="./img/Placements/synechrone.png" alt=""></i>
+                            <i><a href="https://www.synechron.com/"><img src="./img/Placements/synechrone.png" alt=""></a></i>
                         </li>
                         <li class="carousel-item-placement">
-                            <i><img src="./img/Placements/tcs.png" alt=""></i>
+                            <i><a href="https://www.tcs.com/"><img src="./img/Placements/tcs.png" alt=""></a></i>
                         </li>
                         <li class="carousel-item-placement">
-                            <i><img src="./img/Placements/Optiqua.png" alt=""></i>
+                            <i><a href="#"><img src="./img/Placements/Optiqua.png" alt=""></a></i>
                         </li>
-                        <li class="carousel-item-placement">
-                            <i><img src="./img/Placements/Yugensys.png" alt=""></i>
+                        <li class="carousel-item-placement none">
+                            <i><a href="http://www.yugensys.com/"><img src="./img/Placements/Yugensys.png" alt=""></a></i>
                         </li>
-                        <li class="carousel-item-placement">
-                            <i><img src="./img/Placements/Webtech.jpg" alt=""></i>
+                        <li class="carousel-item-placement none">
+                            <i><a href="http://www.webtechdevelopers.com/"><img src="./img/Placements/Webtech.jpg" alt=""></a></i>
                         </li>
-                        <li class="carousel-item-placement">
-                            <i><img src="./img/Placements/machbizzlogo.png" alt=""></i>
+                        <li class="carousel-item-placement none">
+                            <i><a href="https://www.machbizz.com/"><img src="./img/Placements/machbizzlogo.png" alt=""></a></i>
                         </li>
-                        <li class="carousel-item-placement">
-                            <i><img src="./img/Placements/sap.png" alt=""></i>
+                        <li class="carousel-item-placement none">
+                            <i><a href="https://www.sap.com/india/index.html"><img src="./img/Placements/sap.png" alt=""></a></i>
                         </li>
                       </ul>
                     </div>
@@ -380,7 +376,7 @@
                                     <input type="email" placeholder="Enter your Email" id="email" required>
                                     <textarea name="para" id="message" cols="30" rows="10" placeholder="Tell me Something....."></textarea>
 
-                                    <div class="view-btn">
+                                    <div class="view-btn submit">
                                         <button type="submit" onclick="SubmitForm()">Submit</button>
                                     </div>
                                 </form>
@@ -422,6 +418,7 @@
         </div>
     </div>
 
+    <script src="./javascript/nav.js"></script>
     <script src="./javascript/script.js"></script>
 </body>
 </html>

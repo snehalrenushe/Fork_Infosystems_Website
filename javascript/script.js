@@ -108,7 +108,9 @@ function Placement() {
   carouselSliderplacement.addEventListener("mouseleave", unhover);
 }
 
+// Contact us 
 function SubmitForm()
 {
   alert("form Submitted, Will connect you soon!!");
 }
+
