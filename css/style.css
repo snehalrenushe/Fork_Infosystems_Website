@@ -181,7 +181,7 @@ a
   display: flex;
   justify-content: space-evenly;
   width: 140%;
-  margin-left: 32%;
+  margin-left: 30%;
 }
 
 .nav-links li{
@@ -241,7 +241,8 @@ a
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 98.8vw;
+  /* width: 98.8vw; */
+  width: 98.7vw;
   height: 5.6vh;
 }
 
@@ -329,7 +330,6 @@ a
 /* About Us */
 
 .tagline{
-  margin-top: 2rem;
   font-weight: bold;
 }
 .tagline img{
