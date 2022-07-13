@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <section class="banner">
+        <section class="banner" id="Home">
             <nav class="header">
                 <div class="header-content">
                     <div class="header-email">
@@ -347,16 +347,80 @@
                     </div>
                     <div class="contact-us">
                         <div class="contact-us-cards">
-                            1
+                            <div class="contact-card-content">
+                                <div class="contact-box">
+                                    <img src="./img/Contact/location.png" alt="">
+                                    <h3>OUR CLASS</h3>
+                                    <p>Block No : S - 3 Prakashanand Colony Sai Palace Apartment, Vidyanagar, Karad, 415124</p>
+                                </div>
+                                <div class="contact-box">
+                                    <img src="./img/Contact/phone.png" alt="">
+                                    <h3>PHONE NUMBER</h3>
+                                    <p>+91 77579 62804</p>
+                                    <p>+91 77579 62804</p>
+                                </div>
+                                <div class="contact-box">
+                                    <img src="./img/Contact/whatsapp.png" alt="">
+                                    <h3>WHATSAPP</h3>
+                                    <p>+91 77579 62804</p>
+                                </div>
+                                <div class="contact-box">
+                                    <img src="./img/Contact/email.png" alt="">
+                                    <h3>EMAIL</h3>
+                                    <p>forkinfosystems@gmail.com</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="contact-us-form">
-                            2
+                            <div class="form">
+                                <form>
+                                    <p>Contact Us</p>
+
+                                    <input type="text" placeholder="Enter your Name" id="name" required>
+                                    <input type="email" placeholder="Enter your Email" id="email" required>
+                                    <textarea name="para" id="message" cols="30" rows="10" placeholder="Tell me Something....."></textarea>
+
+                                    <div class="view-btn">
+                                        <button type="submit" onclick="SubmitForm()">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="footer">7</section>
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="./img/logo.png" alt="">
+                </div>
+                <div class="navigational-links">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Aboutus">About Us</a></li>
+                        <li><a href="#Gallary">gallary</a></li>
+                        <li><a href="#Courses">Courses</a></li>
+                        <li><a href="#Placements">Placements</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-media">
+                    <ul>
+                        <li><a href="#Home"><img src="./img/Contact/facebook.png" alt=""></a></li>
+                        <li><a href="#Aboutus"><img src="./img/Contact/instagram.png" alt=""></a></a></li>
+                        <li><a href="#Gallary"><img src="./img/Contact/linkedin.png" alt=""></a></li>
+                        <li><a href="#Courses"><img src="./img/Contact/youtube.png" alt=""></a></a></li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="copyright">
+                <p>Exec Software Solutions ©2022 All rights reserved</p>
+            </div>
+        </section>
+        <div class="toparrow">
+            <!-- <a href="#Home"><img src="./img/circle-arrow-up-solid.svg" alt="" class="top" id="top"></a> -->
+            <a href="#Home"><img src="./img/up-arrow.png" alt="" class="top" id="top"></a>
+        </div>
     </div>
 
     <script src="./javascript/script.js"></script>

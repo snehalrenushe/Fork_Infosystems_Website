@@ -107,3 +107,8 @@ function Placement() {
   carouselSliderplacement.addEventListener("mouseenter", hover);
   carouselSliderplacement.addEventListener("mouseleave", unhover);
 }
+
+function SubmitForm()
+{
+  alert("form Submitted, Will connect you soon!!");
+}
