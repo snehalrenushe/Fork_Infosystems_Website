@@ -1029,6 +1029,11 @@ textarea
     font-size: 20px;
   }
 
+  .course-btn
+  {
+    margin-top: 194vh;
+  }
+
   /* .course-btn
   {
     margin-top: 192vh;
