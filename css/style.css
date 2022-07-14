@@ -1029,6 +1029,11 @@ textarea
     font-size: 20px;
   }
 
+  /* .course-btn
+  {
+    margin-top: 192vh;
+  } */
+
   /* Placement Section */
 
   .placement-quote
@@ -1095,5 +1100,61 @@ textarea
   .form 
   {
     width: 90%;
+  }
+
+  /* Footer */
+
+  .footer
+  {
+    height: 24vh;
+  }
+
+  .footer-container
+  {
+    width: 100%;
+  }
+
+  .footer-logo 
+  {
+    width: 24vw;
+  }
+
+  .navigational-links ul
+  {
+    flex-direction: column;
+  }
+
+  .navigational-links
+  {
+    margin: 0;
+  }
+
+  .navigational-links li a 
+  {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .footer-social-media ul
+  {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footer-social-media img 
+  {
+    width: 5vw;
+  }
+
+  .footer-social-media 
+  {
+    margin-right: 3.5vh;
+  }
+
+  .copyright p 
+  {
+    font-weight: normal; 
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
   }
 }
