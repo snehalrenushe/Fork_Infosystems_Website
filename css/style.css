@@ -1034,11 +1034,6 @@ textarea
     margin-top: 194vh;
   }
 
-  /* .course-btn
-  {
-    margin-top: 192vh;
-  } */
-
   /* Placement Section */
 
   .placement-quote
@@ -1107,6 +1102,11 @@ textarea
     width: 90%;
   }
 
+  .form p 
+  {
+    font-size: 1.8rem;
+  }
+
   /* Footer */
 
   .footer
@@ -1161,5 +1161,764 @@ textarea
     font-weight: normal; 
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px)  and (max-width: 767px)
+{
+  /* Up Arrow */
+  .toparrow
+  {
+    left: 92%;
+  }
+
+  /* Heading navbar */
+
+  .header-content
+  {
+    width: 100%;
+    padding: 0.46rem 0.5rem;
+  }
+
+  .header-name a 
+  {
+    font-size: 0.8rem;
+  }
+
+  .header-email
+  {
+    width: 30%;
+  }
+
+  .header-mobile
+  {
+    width: 20%;
+  }
+
+  .header-logo 
+  {
+    width: 10%;
+    height: 10%;
+  }
+
+  .mobile
+  {
+    width: 14%;
+  }
+
+  /* Navbar */
+  .navbar-list
+  {
+    position: absolute;
+    right: 0;
+    top:8vh;
+    margin-top: 8vh;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links
+  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #085ac4; 
+    height: 45vh;
+  }
+
+  .burger
+  {
+      display: block;
+      cursor: pointer;
+      margin-right: 6vw;
+  }
+
+  .nav-active
+  {
+      transform: translateX(0%);
+  }
+
+  .logo 
+  {
+    width: 12%;
+  }
+
+  /* Gallary slider */
+
+  .Section_top
+  {
+    background-image: url(../img/Header_Slider/ipad1.png);
+  }
+
+  @keyframes change
+  {
+    0%
+    {
+        background-image: url(../img/Header_Slider/ipad2.png);
+    }
+    40%
+    {
+        background-image: url(../img/Header_Slider/ipad3.png);
+    }
+    80%
+    {
+        background-image: url(../img/Header_Slider/ipad1.png);
+    }
+  }
+
+  /* Marquee */
+
+  .marquee div
+  {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+
+  
+  /* About us */
+
+  .about-card 
+  {
+    margin-top: 1vh;
+  }
+
+  .aboutus,.courses,.contact
+  {
+      overflow-y: auto;
+  }
+
+  .about-card .card 
+  {
+    width: 40%;
+    margin: 2vh auto;
+  }
+
+  .about-card-content h5 
+  {
+    font-size: 20px;
+  }
+
+  .about-card-content p 
+  {
+    font-size: 20px;
+    /* width: 58vw; */
+  }
+
+  .bollets 
+  {
+    margin-left: 2rem;
+  }
+
+  /* Gallary */
+
+  .carousel__item img
+  {
+    width: 62vw;
+    height: 52vh;
+  }
+
+  .view-btn
+  {
+    margin-top: 4vh;
+  }
+
+  /* Courses */
+
+  .courses
+  {
+    margin-bottom: 8vh;
+  }
+
+  .box-content
+  {
+    width: 45%;
+    margin: 2vh auto;
+  }
+
+  .course-box-back p
+  {
+    font-size: 16px;
+    width: 35vw;
+  }
+
+  .course-box-back button 
+  {
+    padding: 1vw 5vw;
+  }
+
+  .course-btn
+  {
+    margin-top: 74vh;
+  }
+
+  /* Placement Section */
+
+  .none
+  {
+    display: none;
+  }
+
+  /* Contact Us */
+
+  .contact-us {
+    top: 0;
+    margin: auto;
+    width: 100%;
+  }
+
+  .contact-card-content
+  {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .contact-card-content > div 
+  {
+    width: 40%;
+  } 
+
+  .map-img img 
+  {
+    margin-top: 58vh;
+  }
+
+  .contact-us-form 
+  {
+    margin-top: 80vh;
+    width: 80%;
+    margin-left: 7vh;
+  }
+
+  .form 
+  {
+    width: 90%;
+  }
+
+  .form p 
+  {
+    font-size: 1.8rem;
+  }
+
+  /* Footer */
+
+  .footer
+  {
+    height: 32vh;
+  }
+
+  .footer-logo 
+  {
+    width: 24vw;
+  }
+
+  .navigational-links ul
+  {
+    flex-direction: column;
+  }
+
+  .navigational-links
+  {
+    margin: 0;
+  }
+
+  .navigational-links li a 
+  {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 4vh;
+  }
+
+  .navigational-links li
+  {
+    margin-bottom: 2vh;
+  }
+
+  .footer-social-media ul
+  {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footer-social-media img 
+  {
+    width: 5vw;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+  /* Up Arrow */
+  .toparrow
+  {
+    left: 92%;
+  }
+
+  /* Heading navbar */
+
+  .header-content
+  {
+    width: 70%;
+    padding: 0.46rem 0.5rem;
+  }
+
+  .header-name a 
+  {
+    font-size: 1rem;
+  }
+
+  .header-email
+  {
+    width: 40%;
+  }
+
+  .header-mobile
+  {
+    width: 30%;
+  }
+
+  .header-logo 
+  {
+    width: 8%;
+    height: 8%;
+  }
+
+  .mobile
+  {
+    width: 10%;
+  }
+
+  /* Navbar */
+  .navbar-list
+  {
+    position: absolute;
+    right: 0;
+    top:8vh;
+    margin-top: 8vh;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links
+  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #085ac4; 
+    height: 45vh;
+  }
+
+  .burger
+  {
+      display: block;
+      cursor: pointer;
+      margin-right: 6vw;
+  }
+
+  .nav-active
+  {
+      transform: translateX(0%);
+  }
+
+  .logo 
+  {
+    width: 12%;
+  }
+
+  /* Gallary slider */
+
+  .Section_top
+  {
+    background-image: url(../img/Header_Slider/ipad1.png);
+  }
+
+  @keyframes change
+  {
+    0%
+    {
+        background-image: url(../img/Header_Slider/ipad2.png);
+    }
+    40%
+    {
+        background-image: url(../img/Header_Slider/ipad3.png);
+    }
+    80%
+    {
+        background-image: url(../img/Header_Slider/ipad1.png);
+    }
+  }
+
+  /* Marquee */
+
+  .marquee div
+  {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+
+  
+  /* About us */
+
+  .about-card 
+  {
+    margin-top: 1vh;
+  }
+
+  .aboutus,.courses,.contact
+  {
+      overflow-y: auto;
+  }
+
+  .about-card .card 
+  {
+    width: 40%;
+    margin: 2vh auto;
+  }
+
+  .about-card-content h5 
+  {
+    font-size: 20px;
+  }
+
+  .about-card-content p 
+  {
+    font-size: 20px;
+    /* width: 58vw; */
+  }
+
+  .bollets 
+  {
+    margin-left: 2rem;
+  }
+
+  /* Gallary */
+
+  .carousel__item img
+  {
+    width: 57vw;
+    height: 50vh;
+  }
+
+  .view-btn
+  {
+    margin-top: 4vh;
+  }
+
+  /* Courses */
+
+  .courses
+  {
+    margin-bottom: 8vh;
+  }
+
+  .box-content
+  {
+    width: 40%;
+    margin: 2vh auto;
+  }
+
+  .course-box-back p
+  {
+    font-size: 16px;
+    width: 35vw;
+  }
+
+  .course-box-back button 
+  {
+    padding: 1vw 5vw;
+  }
+
+  .course-btn
+  {
+    margin-top: 74vh;
+  }
+
+  /* Placement Section */
+
+  .none
+  {
+    display: none;
+  }
+
+  /* Contact Us */
+
+  .contact-us {
+    top: 0;
+    margin: auto;
+    width: 100%;
+  }
+
+  .contact-card-content
+  {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .contact-card-content > div 
+  {
+    width: 40%;
+  } 
+
+  .map-img img 
+  {
+    margin-top: 58vh;
+  }
+
+  .contact-us-form 
+  {
+    margin-top: 80vh;
+    width: 80%;
+    margin-left: 7vh;
+  }
+
+  .form 
+  {
+    width: 90%;
+  }
+
+  .form p 
+  {
+    font-size: 1.8rem;
+  }
+
+  /* Footer */
+
+  .footer
+  {
+    height: 28vh;
+  }
+
+  .footer-logo 
+  {
+    width: 12vw;
+  }
+
+  .navigational-links ul
+  {
+    flex-direction: column;
+  }
+
+  .navigational-links
+  {
+    margin: 0;
+  }
+
+  .navigational-links li a 
+  {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 4vh;
+  }
+
+  .navigational-links li
+  {
+    margin-bottom: 1vh;
+  }
+
+  .footer-social-media ul
+  {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .footer-social-media img 
+  {
+    width: 4vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen  and (min-width: 992px) and (max-width: 1199px)
+{
+  .header-content
+  {
+    width: 52%;
+  }
+
+  .navbar-list
+  {
+    width: 60%;
+  }
+
+  .carousel__item img
+  {
+    width: 25vw;
+    height: 36vh;
+  }
+
+  .marquee div
+  {
+    font-size: 1.5rem;
+  }
+
+  .box-content
+  {
+    height: 23vh;
+  }
+
+  .course-box .course-box-back 
+  {
+    padding: 1vw 2vw;
+  }
+
+  .course-box-back img 
+  {
+    width: 33px;
+    height: 32px;
+  }
+
+  .course-box-back h5
+  {
+    font-size: 14px;
+    margin-top: 0.4rem;
+  }
+
+  .course-box-back p 
+  {
+    font-size: 14px;
+  }
+
+  .course-box-back button
+  {
+    margin-top: 1.2vh;
+  }
+
+  .placement-quote
+  {
+    padding: 2vw 5vw;
+  }
+
+  .carousel-list-placement
+  {
+    height: 22vh;
+  }
+
+  .contact-us
+  {
+    margin: 0 4rem;
+  }
+
+  .contact-card-content
+  {
+    margin :2rem 0 2rem 0;
+    width: 56%;
+  }
+}
+
+@media only screen  and (min-width: 1200px)
+{
+  .section-container
+  {
+    margin-bottom: 12vh;
+  }
+
+  .header-email
+  {
+    width: 40%;
+  }
+
+  .header-mobile
+  {
+    width: 28%;
+  }
+
+  .header-content
+  {
+    width: 52%;
+  }
+
+  .navbar-list
+  {
+    width: 60%;
+  }
+
+  .carousel__item img
+  {
+    width: 25vw;
+    height: 36vh;
+  }
+
+  .marquee div
+  {
+    font-size: 1.5rem;
+  }
+
+  .box-content
+  {
+    height: 23vh;
+  }
+
+  .course-box .course-box-back 
+  {
+    padding: 1vw 2vw;
+  }
+
+  .course-box-back img 
+  {
+    width: 33px;
+    height: 32px;
+  }
+
+  .course-box-back h5
+  {
+    font-size: 14px;
+    margin-top: 0.4rem;
+  }
+
+  .course-box-back p 
+  {
+    font-size: 14px;
+  }
+
+  .course-box-back button
+  {
+    margin-top: 1.2vh;
+  }
+
+  .placement-quote
+  {
+    padding: 2vw 5vw;
+  }
+
+  .carousel-list-placement
+  {
+    height: 22vh;
+  }
+
+  .contact-us
+  {
+    margin: 0 5rem;
+    width: 70%;
+  }
+
+  .contact-card-content
+  {
+    margin :2rem 0 2rem 0;
+    width: 56%;
+  }
+
+  .contact-us-form
+  {
+    margin-left: 63vh;
+  }
+
+  .contact-card-content > div
+  {
+    width: 45%;
+  }
+
+  .view-btn
+  {
+    margin-bottom: 8vh;
   }
 }
